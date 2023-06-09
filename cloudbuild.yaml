@@ -1,6 +1,6 @@
 steps:
   - id: "testing"
-    name: "hashicorp/terraform:1.4.4"
+    name: "google/cloud-sdk"
     dir: "."
     entrypoint: "sh"
     args: 
