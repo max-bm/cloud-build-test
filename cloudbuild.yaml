@@ -5,7 +5,7 @@ steps:
     entrypoint: "sh"
     args: 
       - "-c"
-        |
+      - |
         gcloud storage buckets create \
         gs://blog-final-test-cloud-build-made-bucket \
         --project=blog-final-test
