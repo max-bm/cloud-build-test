@@ -10,6 +10,4 @@ steps:
         gs://blog-final-test-cloud-build-made-bucket \
         --project=blog-final-test
         gcloud storage buckets update \
-        gs://blog-final-test-cloud-build-made-bucket \
-        --versioning
-
+        gsutil versioning set on gs://blog-final-test-cloud-build-made-bukcet
