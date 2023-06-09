@@ -8,9 +8,9 @@ steps:
       - "-c"
         |
         gcloud storage buckets create \
-        gs://<PROJECT_ID>-tfstate \
-        --project=<PROJECT_ID>
+        gs://blog-final-test-cloud-build-made-bucket \
+        --project=blog-final-test
         gcloud storage buckets update \
-        gs://<PROJECT_ID>-tfstate \
+        gs://blog-final-test-cloud-build-made-bucket \
         --versioning
 
