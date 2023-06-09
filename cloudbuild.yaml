@@ -9,5 +9,6 @@ steps:
         gcloud storage buckets create \
         gs://blog-final-test-cloud-build-made-bucket \
         --project=blog-final-test
-        gcloud storage buckets update \
-        gsutil versioning set on gs://blog-final-test-cloud-build-made-bukcet
+        gsutil versioning set on \
+        gs://blog-final-test-cloud-build-made-bukcet
+
