@@ -10,5 +10,5 @@ steps:
         gs://blog-final-test-cloud-build-made-bucket \
         --project=blog-final-test
         gsutil versioning set on \
-        gs://blog-final-test-cloud-build-made-bukcet
+        gs://blog-final-test-cloud-build-made-bucket
 
