@@ -1,0 +1,16 @@
+steps:
+  - id: "testing"
+    waitFor: ['-']
+    name: "hashicorp/terraform:1.4.4"
+    dir: "."
+    entrypoint: "sh"
+    args: 
+      - "-c"
+        |
+        gcloud storage buckets create \
+        gs://<PROJECT_ID>-tfstate \
+        --project=<PROJECT_ID>
+        gcloud storage buckets update \
+        gs://<PROJECT_ID>-tfstate \
+        --versioning
+
